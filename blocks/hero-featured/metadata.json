@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-featured",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-02T15:33:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en.html",
+    "originPage": "WKND homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "featured-article",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "pretitle + heading + description + CTA + image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "featured content teasers",
+      "article highlight sections",
+      "content with image and text side-by-side"
+    ],
+    "notSuitableFor": [
+      "full-bleed hero banners",
+      "dark background heroes",
+      "heroes without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T15:33:00.000Z"
+  }
+}
