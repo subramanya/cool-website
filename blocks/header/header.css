@@ -123,18 +123,6 @@ header nav .nav-sections {
   flex: 1 1 auto;
 }
 
-/* expanded mobile menu: readable vertical list with spacing */
-header nav[aria-expanded='true'] .nav-sections ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem 0;
-}
-
-header nav[aria-expanded='true'] .nav-sections li {
-  padding: 0.25rem 0;
-}
-
 header nav .nav-sections ul  {
   font-size: 16px;
   font-weight: 500;
@@ -150,6 +138,18 @@ header nav .nav-sections li {
 header nav[aria-expanded='true'] .nav-sections {
   display: block;
   align-self: flex-start;
+}
+
+/* expanded mobile menu: readable vertical list with spacing */
+header nav[aria-expanded='true'] .nav-sections ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+header nav[aria-expanded='true'] .nav-sections li {
+  padding: 0.25rem 0;
 }
 
 /* tools */
