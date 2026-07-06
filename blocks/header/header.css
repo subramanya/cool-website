@@ -30,8 +30,9 @@ header nav ul {
 header nav[aria-expanded='true'] {
   grid-template: 'hamburger brand' 'sections sections' 'tools tools';
   grid-template-columns:  56px 1fr;
-  overflow-y: scroll;
+  overflow-y: auto;
   min-height: 100vh;
+  background-color: var(--background-color, #fff);
 }
 
 /* brand */
@@ -118,8 +119,20 @@ header nav .nav-sections {
   grid-area: sections;
   flex-direction: column;
   display: none;
-  background-color: var(--overlay-color);
+  background-color: var(--overlay-color, var(--background-color, #fff));
   flex: 1 1 auto;
+}
+
+/* expanded mobile menu: readable vertical list with spacing */
+header nav[aria-expanded='true'] .nav-sections ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+header nav[aria-expanded='true'] .nav-sections li {
+  padding: 0.25rem 0;
 }
 
 header nav .nav-sections ul  {
