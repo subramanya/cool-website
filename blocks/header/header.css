@@ -33,6 +33,7 @@ header nav[aria-expanded='true'] {
   overflow-y: auto;
   min-height: 100vh;
   background-color: var(--background-color, #fff);
+  z-index: 100;
 }
 
 /* brand */
