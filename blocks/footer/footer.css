@@ -13,10 +13,11 @@ footer .footer p {
   margin: 0 0 1rem;
 }
 
-/* footer logo */
+/* footer logo — source asset is a white logo; invert to black for the light footer */
 footer .footer img {
   width: 160px;
   height: auto;
+  filter: invert(1);
 }
 
 /* footer navigation links */
