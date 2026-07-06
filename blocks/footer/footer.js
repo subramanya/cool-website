@@ -41,6 +41,18 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   footer.innerHTML = html;
   normalizeLinks(footer);
+
+  // ensure the footer logo links to the home page
+  const logo = footer.querySelector('picture, img');
+  if (logo && !logo.closest('a')) {
+    const link = document.createElement('a');
+    link.href = '/';
+    link.setAttribute('aria-label', 'Home');
+    const target = logo.closest('picture') || logo;
+    target.replaceWith(link);
+    link.append(target);
+  }
+
   await decorateIcons(footer);
   block.append(footer);
 }

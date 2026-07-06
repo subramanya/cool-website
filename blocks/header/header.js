@@ -27,6 +27,23 @@ function normalizeLinks(container) {
 }
 
 /**
+ * Ensures the brand logo links to the home page.
+ * If the logo image isn't already inside an anchor, wraps it in a link to "/".
+ * @param {Element} brand the nav-brand container element
+ */
+function linkBrandToHome(brand) {
+  if (!brand) return;
+  const img = brand.querySelector('picture, img');
+  if (!img || img.closest('a')) return;
+  const link = document.createElement('a');
+  link.href = '/';
+  link.setAttribute('aria-label', 'Home');
+  const target = img.closest('picture') || img;
+  target.replaceWith(link);
+  link.append(target);
+}
+
+/**
  * collapses all open nav sections
  * @param {Element} sections The container element
  */
@@ -79,6 +96,8 @@ export default async function decorate(block) {
       const section = nav.children[j];
       if (section) section.classList.add(`nav-${e}`);
     });
+
+    linkBrandToHome(nav.querySelector('.nav-brand'));
 
     const navSections = [...nav.children][1];
     if (navSections) {
