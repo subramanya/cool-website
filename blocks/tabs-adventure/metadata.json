@@ -1,0 +1,43 @@
+{
+  "variantName": "tabs-adventure",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-06-03T07:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+    "originPage": "WKND adventure detail page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "adventure-content",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "tab label + rich text content with images",
+    "buttonCount": 0,
+    "imageCount": 7,
+    "tabCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "adventure/trip detail pages with multiple content sections",
+      "product pages with overview/specs/reviews tabs",
+      "content-heavy pages needing organization into switchable panels"
+    ],
+    "notSuitableFor": [
+      "simple content without multiple sections",
+      "pages where all content should be visible simultaneously",
+      "tabs with only short text (no rich content)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/us/en/adventures/ski-touring-mont-blanc",
+      "/us/en/adventures"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-07-06T12:23:14.362Z"
+  }
+}

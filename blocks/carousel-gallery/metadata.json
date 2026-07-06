@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-gallery",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-03T07:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+    "originPage": "WKND adventure detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "adventure-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "images only",
+    "buttonCount": 0,
+    "imageCount": 3,
+    "slidesCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image-only galleries",
+      "adventure/travel photo slideshows",
+      "product image carousels without text overlay"
+    ],
+    "notSuitableFor": [
+      "hero carousels with text content",
+      "promotional slides with CTAs",
+      "carousel with heading and description per slide"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en/adventures/ski-touring-mont-blanc"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T07:41:00.000Z"
+  }
+}

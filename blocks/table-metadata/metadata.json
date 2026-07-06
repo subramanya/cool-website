@@ -1,0 +1,41 @@
+{
+  "variantName": "table-metadata",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2026-06-03T07:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+    "originPage": "WKND adventure detail page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "adventure-metadata",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "label + value pairs",
+    "buttonCount": 0,
+    "imageCount": 0,
+    "rowCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "key-value metadata displays",
+      "product attribute tables",
+      "adventure/trip detail sidebars",
+      "specification lists"
+    ],
+    "notSuitableFor": [
+      "complex multi-column data tables",
+      "tables with many rows of data",
+      "comparison tables with header rows"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en/adventures/ski-touring-mont-blanc"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T07:41:00.000Z"
+  }
+}
