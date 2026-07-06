@@ -58,6 +58,22 @@ export default async function decorate(block) {
     normalizeLinks(nav);
     decorateIcons(nav);
 
+    // If the nav authored as a single section (brand logo + menu list together),
+    // split it into the brand/sections divs the grid layout expects.
+    if (nav.children.length === 1) {
+      const single = nav.children[0];
+      const brandDiv = document.createElement('div');
+      const sectionsDiv = document.createElement('div');
+      [...single.childNodes].forEach((node) => {
+        if (node.nodeType === 1 && node.tagName === 'UL') {
+          sectionsDiv.append(node);
+        } else {
+          brandDiv.append(node);
+        }
+      });
+      single.replaceWith(brandDiv, sectionsDiv);
+    }
+
     const classes = ['brand', 'sections', 'tools'];
     classes.forEach((e, j) => {
       const section = nav.children[j];

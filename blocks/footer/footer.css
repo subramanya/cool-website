@@ -1,6 +1,6 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: var(--overlay-background-color, #eee);
   font-size: var(--body-font-size-s);
 }
 
@@ -10,5 +10,34 @@ footer .footer {
 }
 
 footer .footer p {
+  margin: 0 0 1rem;
+}
+
+/* footer logo */
+footer .footer img {
+  width: 160px;
+  height: auto;
+}
+
+/* footer navigation links */
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer .footer ul li {
   margin: 0;
+}
+
+footer .footer a:any-link {
+  color: currentcolor;
+  text-decoration: none;
+}
+
+footer .footer a:hover {
+  text-decoration: underline;
 }
